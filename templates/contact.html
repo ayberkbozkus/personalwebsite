@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<title>İletişim</title>
+			<link rel="shortcut icon" href="./logo.jpg" type="image/icon">
+			<meta charset="UTF-8" />
+			<meta name="description" content="Ayberk's personal page" />
+			<meta name="keywords" content="ayberk bozkuş" />
+			<meta name="author" content="ayberk bozkuş" />
+			<link rel="stylesheet" href="styles.css">
+			<style>
+			.button {
+			  background-color: #4CAF50;
+			  border: none;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+		      border-radius: 8px;
+			}
+			.button:hover{
+				opacity: 0.6;			
+			}
+			.button1 {
+		        background-color: white; 
+		        color: black; 
+		        border: 2px solid #4CAF50;
+		    }
+
+			</style>
+		</head>
+		<body>
+			<img src="head.jpg" alt="Ayberk Bozkuş" style="width:400px;height:100px;margin-left: 250px;margin-top: 15px;" title="My changed photo">
+				<div class="Menu">
+					<ul style="margin-left: 450px;margin-right: 450px;">
+  						<li><a href="/">Anasayfa</a></li>
+						<li class="dropdown">
+						<a href="/Çalışmalarım" class="dropbtn">Çalışmalarım</a>
+						<div class="dropdown-content">
+						<a href="#">Python</a>
+						<a href="#">HTML</a>
+						</div>
+  						<li><a href="/Hakkımda">Hakkımda</a></li>
+						<li class="dropdown">
+						<a href="/Konular" class="dropbtn">Konular</a>
+						<div class="dropdown-content">
+						<a href="#">Python</a>
+						<a href="#">HTML</a>
+						<a href="#">CSS</a>
+						<a href="#">Linux</a>
+						<a href="#">Block Chain</a>
+						</div>
+  						 <li><a href="/SonYazılarım">Son Yazılarım</a></li>
+ 						<li><a href="/İletişim">İletişim</a></li>
+					</ul>
+				</div>
+					<div style="margin-top: 60px;margin-left: 350px;">
+						<table>
+						<tr>
+							<h1> Contact </h1>
+						</tr>
+						<tr><td style="font-size: 25px;"><a href="mailto:ayberkbozkus@gmail.com">ayberkbozkus@gmail.com</a></td></tr>
+					</table>
+					<br><br>
+
+					<form action="/İletişim" method="post">
+					İsminiz:
+					<input type="text" style="width:400px; height:20px;" name="name" placeholder="Adınızı giriniz...">
+					Mail adresiniz:
+					<input type="text" style="width:400px; height:20px;margin-top: 10px;" name="mail" placeholder="Mail adresinizi giriniz..."><br>
+					Konu:<br>
+					<input type="text" style="width:966px; height:20px;margin-top: 10px;" name="subject" placeholder="Konuyu giriniz..."><br>
+					Mesajınız:<br>
+					<textarea type="text" style="width:966px; height:150px; margin-top: 10px;" name="message" placeholder="Mesajınızı giriniz..."></textarea><br>
+					<input class="button button1" style="margin-left: 853px;" type="submit" value="Gönder">
+					</form> 
+ 					</div>
+ 					<br>
+ 					<br>
+ 					{% for i in isim %}
+ 					<p> İsim : {{isim[1]}} </p><br>
+ 					<p> Mail : {{eposta[1]}} </p><br>
+ 					<p> Konu : {{konu[1]}} </p><br>
+ 					<p> Mesaj : {{mesaj[1]}} </p><br>
+ 					<p> --------------------------------------------------------------------- </p>
+ 					{% endfor %}
+ 					<hr style="margin-top: 50px; margin-left: 250px;margin-right: 250px;width: 1073px;">
+					<p style="margin-left: 250px;"> © 2019 Ayberk Bozkuş </p>
+</body>
+</html>
