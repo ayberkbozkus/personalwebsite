@@ -15,8 +15,6 @@ def index():
 def main():
 	return render_template ("index.html")
 
-url_for('static', filename='style.css')
-
 @app.route("/İletişim",methods = ["GET","POST"])
 def contact():
 	if request.method == "POST":
