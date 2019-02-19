@@ -14,72 +14,72 @@
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  opacity: 0.8;
-  position: fixed;
-  bottom: 23px;
-  right: 28px;
-  width: 280px;
+	background-color: #555;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	bottom: 23px;
+	right: 28px;
+	width: 280px;
 }
 
 /* The popup chat - hidden by default */
 .chat-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border: 3px solid #f1f1f1;
+	z-index: 9;
 }
 
 /* Add styles to the form container */
 .form-container {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
 }
 
 /* Full-width textarea */
 .form-container textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  resize: none;
-  min-height: 200px;
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
 }
 
 /* When the textarea gets focus, do something */
 .form-container textarea:focus {
-  background-color: #ddd;
-  outline: none;
+	background-color: #ddd;
+	outline: none;
 }
 
 /* Set a style for the submit/send button */
 .form-container .btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
 }
 
 /* Add a red background color to the cancel button */
 .form-container .cancel {
-  background-color: red;
+	background-color: red;
 }
 
 /* Add some hover effects to buttons */
 .form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+	opacity: 1;
 }
 .column_for_menu {
 	float: left;
@@ -89,7 +89,7 @@
 			</style>
 		</head>
 		<body>
-			<img src="../static/head.jpg" alt="Ayberk Bozkuş" style="width:400px;height:100px;margin-left: 250px;margin-top: 15px;" title="Hello World">
+			<img src="../static/head.jpg" alt="Ayberk Bozkuş" style="width:25%;height:100px;margin-left: 15%;margin-right: 60%;margin-top: 15px;" title="Hello World">
 				<div class="Menu">
 					<ul class="column_for_menu"></ul>
 					<ul  style="width: %40; class="column_for_menu"">
@@ -115,27 +115,24 @@
 					</ul>
 					<ul class="column_for_menu"></ul>
 				</div>
-			<img src="../static/hello_World.jpg" alt="Hello World" style="width:1003px;height:310px;margin-left: 250px;margin-right: 250px;margin-top: 20px;" title="Hello World">
+			<img src="../static/hello_world.jpg" alt="Hello World" style="width:1003px;height:310px;margin-left: 250px;margin-right: 250px;margin-top: 20px;" title="Hello World">
 			<div class="row">
 			<div class="column">
-			<a href="my_project.html"><img class="picture_button" src="../static/my_work.jpg" alt="Çalışmalarım" style="width:200px;height:200px;margin-left: 350px;margin-top: 30px;"></a>
-			<p style="margin-left: 350px;"> Çalışmalarım ve detayları </p>
+			<a href="my_project.html"><img class="picture_button" src="../static/my_work.jpg" alt="Çalışmalarım" style="float: left;width:12%;height:200px;margin-left: 25%;margin-top: 30px;"></a>
 			</div>
 
 			<div class="column" style="margin-top: 20px;">
-			<a href="contact.html"><img class="picture_button" src="../static/contact.jpg" alt="contact" style="width:200px;height:200px;margin-left: 100px;margin-top: 80px;" ></a>
-			<p style="margin-left: 170px;"> İletişim </p>
+			<a href="contact.html"><img class="picture_button" src="../static/contact.jpg" alt="contact" style="float: left;width:12%;height:200px;margin-left: 7%;margin-top: 80px;" ></a>
 			</div>
 
 			<div class="column" style="margin-top: 20px;">
-			<a href="subject.html"><img class="picture_button" src="../static/blog.jpg" alt="Blog" style="width:200px;height:200px;margin-left: 100px;margin-right: 90px;margin-top: 130px;" ></a>
-			<p style="margin-left: 170px;"> Öğretici İçerikler </p>
+			<a href="subject.html"><img class="picture_button" src="../static/blog.jpg" alt="Blog" style="float: left;width:12%;height:200px;margin-left: 7%;margin-right: 25%;margin-top: 130px;" ></a>
 			</div>
 			</div>
 			<button class="open-button" onclick="openForm()">Chat</button>
 
 <div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
+  <form action="/" method="post" class="form-container">
     <h1>Chat</h1>
 
     <label for="msg"><b>Message</b></label>
@@ -155,6 +152,16 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 </script>
+
+{{ msg }}
+{{ msg }}
+
+{{ msg }}
+{{ msg }}
+{{ msg }}
+{{ msg }}
+
+
 			<hr style="margin-left: 250px;margin-right: 250px;width: 1003px;">
 			<p style="margin-left: 250px;"> © 2019 Ayberk Bozkuş </p>
 		</body>
