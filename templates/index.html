@@ -81,12 +81,18 @@
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+.column_for_menu {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	}
 			</style>
 		</head>
 		<body>
 			<img src="../static/head.jpg" alt="Ayberk Bozkuş" style="width:400px;height:100px;margin-left: 250px;margin-top: 15px;" title="Hello World">
 				<div class="Menu">
-					<ul style="margin-left: 450px;margin-right: 450px;">
+					<ul class="column_for_menu"></ul>
+					<ul  style="width: %40; class="column_for_menu"">
   						<li><a href="/">Anasayfa</a></li>
 						<li class="dropdown">
 						<a href="/Çalışmalarım" class="dropbtn">Çalışmalarım</a>
@@ -107,6 +113,7 @@
   						 <li><a href="/SonYazılarım">Son Yazılarım</a></li>
  						<li><a href="/İletişim">İletişim</a></li>
 					</ul>
+					<ul class="column_for_menu"></ul>
 				</div>
 			<img src="../static/hello_World.jpg" alt="Hello World" style="width:1003px;height:310px;margin-left: 250px;margin-right: 250px;margin-top: 20px;" title="Hello World">
 			<div class="row">
