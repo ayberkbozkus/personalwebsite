@@ -34,9 +34,9 @@
 			</style>
 		</head>
 		<body>
-			<img src="../static/head.jpg" alt="Ayberk Bozkuş" style="width:400px;height:100px;margin-left: 250px;margin-top: 15px;" title="My changed photo">
+			<img src="../static/head.jpg" alt="Ayberk Bozkuş" style="width:25%;height:100px;margin-left:15%;margin-right:60%;margin-top: 15px;" title="Hello World">
 				<div class="Menu">
-					<ul style="margin-left: 450px;margin-right: 450px;">
+					<ul style="margin-left:30%;margin-right:30%;width:40%;">
   						<li><a href="/">Anasayfa</a></li>
 						<li class="dropdown">
 						<a href="/Çalışmalarım" class="dropbtn">Çalışmalarım</a>
@@ -58,7 +58,7 @@
  						<li><a href="/İletişim">İletişim</a></li>
 					</ul>
 				</div>
-					<div style="margin-top: 60px;margin-left: 350px;">
+					<div style="margin-top: 60px;margin-left: 15%;margin-right: 15%;">
 						<table>
 						<tr>
 							<h1> Contact </h1>
@@ -68,27 +68,24 @@
 					<br><br>
 
 					<form action="/İletişim" method="post">
-					İsminiz:
-					<input type="text" style="width:400px; height:20px;" name="name" placeholder="Adınızı giriniz...">
-					Mail adresiniz:
-					<input type="text" style="width:400px; height:20px;margin-top: 10px;" name="mail" placeholder="Mail adresinizi giriniz..."><br>
-					Konu:<br>
-					<input type="text" style="width:966px; height:20px;margin-top: 10px;" name="subject" placeholder="Konuyu giriniz..."><br>
-					Mesajınız:<br>
-					<textarea type="text" style="width:966px; height:150px; margin-top: 10px;" name="message" placeholder="Mesajınızı giriniz..."></textarea><br>
+					<font > İsminiz: </font> 
+					<input type="text" style="width: 41.955%;height:20px;margin-top: 10px;" name="name" placeholder="Adınızı giriniz...">
+					<font style="width: 5%;"> Mail adresiniz:  </font> 
+					<input type="text" style="width: 42%; height:20px;margin-top: 10px;" name="mail" placeholder="Mail adresinizi giriniz..."><br>
+					<font style="width: 5%;"> Konu: </font> <br>
+					<input type="text" style="width: 100%; height:20px;margin-top: 10px;" name="subject" placeholder="Konuyu giriniz..."><br>
+					<font style="width: 5%;"> Mesajınız: </font> <br>
+					<textarea type="text" style="width: 100%; height:150px; margin-top: 10px;" name="message" placeholder="Mesajınızı giriniz..."></textarea>
+					<br>
 					<input class="button button1" style="margin-left: 853px;" type="submit" value="Gönder">
 					</form> 
  					</div>
+ 					<tbody>
  					<br>
  					<br>
- 					{% for i in isim %}
- 					<p> İsim : {{isim[1]}} </p><br>
- 					<p> Mail : {{eposta[1]}} </p><br>
- 					<p> Konu : {{konu[1]}} </p><br>
- 					<p> Mesaj : {{mesaj[1]}} </p><br>
- 					<p> --------------------------------------------------------------------- </p>
- 					{% endfor %}
- 					<hr style="margin-top: 50px; margin-left: 250px;margin-right: 250px;width: 1073px;">
-					<p style="margin-left: 250px;"> © 2019 Ayberk Bozkuş </p>
+
+ 					</tbody>
+			<hr style="margin-left: 15%;margin-right: 15%;width: 70%;">
+			<p style="margin-left: 15%;"> © 2019 Ayberk Bozkuş </p>
 </body>
 </html>
